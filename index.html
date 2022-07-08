@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Country API Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+    <style>
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 8px;
+            max-width: 30%;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .search-input {
+            width: 80%;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .half-grid {
+            display: grid;
+            grid-template-columns: 60% auto;
+        }
+
+        .tags {
+            padding: 4px 8px;
+            border-radius: 50px;
+            border: 1px solid #ddd;
+            margin-right: 4px;
+        }
+
+        .space-between {
+            justify-content: space-between;
+        }
+
+        .mt-4 {
+            margin-top: 12px;
+        }
+
+        #container {
+            flex-flow: wrap;
+            animation: slideInUp;
+        }
+
+        .animate-364084 {
+            animation-name: slideInUp;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: none;
+        }
+
+        #tags {
+            cursor: pointer;
+        }
+
+        .f-r {
+            float: right;
+            text-align: right;
+        }
+
+        .active-tag {
+            background: powderblue;
+        }
+    </style>
+
+    <h1 class="text-center animate__animated animate__bounce">Country API Javascript</h1>
+
+    <div class="half-grid w-100">
+        <input class="w-100" type="text" onkeyup="filterSearch()" id="input-search">
+        <div class="fav f-r">ribbon</div>
+
+    </div>
+
+    <div class="row mt-4" id="tags">
+
+    </div>
+
+    <div class="row space-between mt-4" id="container">
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
